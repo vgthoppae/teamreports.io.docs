@@ -56,4 +56,41 @@ Adhoc Reports are used for one-off use where once its lifecycle completes, it is
 
 Recurring Reports can recur periodically such as weekly, monthly etc., This means a new report content can be provided every period, where each periodic report goes through its own cycle. Currently supported periods are Daily, Weekly, Monthly, Quarterly and Yearly.
 
-### Report Lifecycle
+### Report Ownership
+
+User(s) contributing content to the report is(are) considered the report owner(s). There are two types of ownership possible.
+
+- Individual team member, where each contributor has their own copy which flows through its own lifecycle
+- Two or more team members collectively contribute content to a report copy
+
+The second option is part of a future release.
+
+### Report Actors (Roles)
+
+As mentioned earlier, the team members play different roles in the report generation process.
+
+Admin user has following responsibilities.
+
+- Assign roles to team members
+- Customize workflow for different reports
+- Assign report specific roles
+
+Author configures report templates
+Contributor contributes content to reports
+Reviewer reviews reports and provides feedback for go-ahead or request rework
+Publisher accepts the reviewer recommendation and publishes the report for readers visibility
+Readers view the published reports
+
+### RBAC (Role Based Access Control)
+
+Depending on the role assigned to a user (Author, Contributor etc.,) he or she can perform only the corresponding permitted actions as explained above. However a user can be assigned with more than one role and has an option to choose one of the granted roles to perform corresponding actions. But this role applies globally across all the reports. If report specific role is desired, read the following section.
+
+### Report Specific Access Control
+
+As the number of reports grows, it may not be desirable to have users having same level of permission for all reports. The feature of report specific access control overcomes that problem by restricting the permission level at report level. For example, if John and Lisa have contributor roles, you could say only Lisa could work contribute on 'Report A'. For the MVP release, this permission is not enforced though the screen does exist to configure the permission.
+
+### Report Workflow (Lifecycle)
+
+Out of the box, all reports go through the below standard steps.
+
+Contribute - Review -
