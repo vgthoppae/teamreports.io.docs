@@ -92,5 +92,5 @@ As the number of reports grows, it may not be desirable to have users having sam
 ### Report Workflow (Lifecycle)
 
 Out of the box, all reports go through the below standard steps.
-
-Contribute - Review &#9658; &#47;
+                     &#47;
+Contribute - Review &#47;
