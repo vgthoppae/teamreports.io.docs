@@ -1,4 +1,4 @@
-# teamreports.io - User Guide
+# [teamreports.io](https://teamreports.io) - User Guide
 
 This documentation covers the concepts and features with the product. The exact details of 'how to do' are covered in the [videos](https://www.youtube.com/channel/UCTy-FhKSi-FJKj2ciYUhY0g).
 
