@@ -1,5 +1,7 @@
 # teamreports.io - User Guide
 
+This documentation covers the concepts and features with the product. The exact details of 'how to do' are covered in the [videos](https://www.youtube.com/channel/UCTy-FhKSi-FJKj2ciYUhY0g).
+
 ## What?
 
 teamreports is a SaaS platform for teams to collaboratively build reports and share them with stakeholders. Typically SaaS platforms provide a service that can be used by subscribers. In addition to being a simple Saas Platform, teamreports.io provides capabilities for each organization to dynamically configure and customize the behavior in a way typical to a No Code platform.
