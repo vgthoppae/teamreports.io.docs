@@ -2,11 +2,11 @@
 
 ## What?
 
-teamreports is a SaaS platform for teams to collabartivaely build reports and share them with stakeholders. Typically SaaS platforms provide a service that can be used by subscribers. In addition to being a simple Saas Platform, teamreports.io provides capabilities for each organization to dynamically configure and customize the behavior in a way typical to a No Code platform.
+teamreports is a SaaS platform for teams to collaboratively build reports and share them with stakeholders. Typically SaaS platforms provide a service that can be used by subscribers. In addition to being a simple Saas Platform, teamreports.io provides capabilities for each organization to dynamically configure and customize the behavior in a way typical to a No Code platform.
 
 ## Why?
 
-The use case of team based reports building is often overlooked and teams usually resort to manual process of collecting information from the team members, iteratively refining them going back and forth before emailing to stakeholders. This manual process is fraught with too many problems including redundancy, error-prone, time-consuming and inefficent simply. This practice is accepted in the industry and there is a good amount of innovation and automation possible in this space, where teamreports is taking a small step forward.
+The use case of team based reports building is often overlooked and teams usually resort to manual process of collecting information from the team members, iteratively refining them going back and forth before emailing to stakeholders. This manual process is fraught with too many problems including redundancy, error-prone, time-consuming and inefficient simply. Though this practice is accepted in the industry, there is a good amount of innovation and automation possible in this space, where teamreports is taking a small step forward.
 
 ## Where?
 
@@ -18,13 +18,13 @@ The process of collaboratively building reports is not only limited to status re
 - Agile Retrospective Reports, where agile teams report on what went well and otherwise
 - Outage Summary Report to summarize an outage that may have occurred
 
-The possiblities are almost endless on where teamreports could be used.
+The possibilities are almost endless on where teamreports could be used.
 
 ## How?
 
 ### Dynamic Report templates
 
-Each team has a unique need for specific use case. There cannot be a one-size fit all approach with the templates. Hence teamreports allows teams define their own template for each reporting needs.
+Each team has a unique need with different use cases. There cannot be a one-size fit all approach with the templates. Hence teamreports allows teams to define their own template for each reporting needs.
 
 ### Role based
 
@@ -34,7 +34,7 @@ In the process of building the reports, team members don different roles each wi
 
 The entire report generation process is driven by a workflow where team members with a specific role participate at corresponding step.
 
-### Configurabe Workflow
+### Configurable Workflow
 
 The workflow itself is configurable at each level to give flexibility to teams on driving the report behavior.
 
@@ -60,7 +60,7 @@ Recurring Reports can recur periodically such as weekly, monthly etc., This mean
 
 User(s) contributing content to the report is(are) considered the report owner(s). There are two types of ownership possible.
 
-- Individual team member, where each contributor has their own copy which flows through its own lifecycle
+- Individual team member, where each contributor has their own copy which flows through its own life cycle
 - Two or more team members collectively contribute content to a report copy
 
 The second option is part of a future release.
@@ -83,14 +83,18 @@ Readers view the published reports
 
 ### RBAC (Role Based Access Control)
 
-Depending on the role assigned to a user (Author, Contributor etc.,) he or she can perform only the corresponding permitted actions as explained above. However a user can be assigned with more than one role and has an option to choose one of the granted roles to perform corresponding actions. But this role applies globally across all the reports. If report specific role is desired, read the following section.
+Depending on the role assigned to a user (Author, Contributor etc.,) he or she can perform only the corresponding permitted actions as explained above. However a user can be assigned with more than one role and has an option to choose one of the granted roles to perform corresponding actions. But this role applies globally across all the reports. If a report specific role is desired, read the following section.
 
 ### Report Specific Access Control
 
-As the number of reports grows, it may not be desirable to have users having same level of permission for all reports. The feature of report specific access control overcomes that problem by restricting the permission level at report level. For example, if John and Lisa have contributor roles, you could say only Lisa could work contribute on 'Report A'. For the MVP release, this permission is not enforced though the screen does exist to configure the permission.
+As the number of reports grows, it may not be desirable to have users having same level of permission for all reports. The feature of report specific access control overcomes that problem by restricting the permission level at report level. For example, if John and Lisa have contributor roles, you could say only Lisa could work contribute on 'Report A'. For the MVP release, this permission is not enforced, though the screen does exist to configure the permission.
 
 ### Report Workflow (Lifecycle)
 
-Out of the box, all reports go through the below standard steps.
-                     &#47;
-Contribute - Review &#47;
+Out of the box, all reports go through a standard sequence where Contributors contribute content and send to Reviewers, who review it and either send it to Publisher or send it back to the owner to make requested changes. This loop continues until the Reviewer accepts the content and approves it for the next step for Publisher to publish the content, at which time the report is LIVE and visible to Readers.
+
+This behavior can be customized in the following ways.
+
+- Skip the Review process for Contributors to make a call on a report being ready to Publish
+- Skip the Publish process so on approval by Reviewers, the report goes LIVE
+- Skip both the Review and Publish process to empower Contributors entirely so a report goes LIVE as soon as they turn in
